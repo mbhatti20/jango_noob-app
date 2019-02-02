@@ -1,0 +1,18 @@
+<a href="{% url 'home' %}">try other text</a>  &nbsp;&nbsp;&nbsp;    <a href="{% url 'about' %}">about author</a>
+<br/>this is us with {{count}} word text
+<h1>Original text</h1>
+
+{{fulltext}}<br/>
+  
+
+<h3>Word Count</h3>
+
+
+{% for word,totc in sortedword %}
+{{ word }}--
+
+{{ totc }}
+<br/>
+
+{% endfor %}
+
